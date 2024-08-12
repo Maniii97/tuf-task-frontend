@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Card.css'
+import "./Card.css"
 import CardProps from '../../types/CardProps';
 
 const RegularContent: React.FC<{ question: string }> = ({ question }) => {

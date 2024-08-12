@@ -4,11 +4,13 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .card-container {
-  width: 520px;
-  height: 520px;
+  /* position: relative; */
+  width: 540px;
+  height: 540px;
   perspective: 1000px;
 }
 
@@ -39,7 +41,7 @@
 
 .front {
   background-color: #90cdf4;
-  color: #2b6cb0;
+  color: #163f6b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +62,7 @@
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 18px;
 }
 
 button {

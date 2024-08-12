@@ -52,12 +52,12 @@ export default function Dashboard() {
           <QuestionForm onAdd={addQuestion} />
         </div>
 
-        <div className="card-container">
+        <div className="db-card-container">
           {flipdata.map((card) => (
             <div
               key={card.id}
               onClick={() => handleOpen(card)}
-              className="card"
+              className="db-card"
             >
               {card.question}
             </div>
