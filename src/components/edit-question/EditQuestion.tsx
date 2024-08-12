@@ -19,7 +19,7 @@ const EditQuestion: React.FC<EditQuestionProps> = ({ id, question, answer, setOp
       answer: newAnswer,
     };
     try {
-      const response = await fetch(`http://localhost:3000/api/questions/${id}`, {
+      const response = await fetch(`https://tuf-task-backend.vercel.app/api/questions/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const EditQuestion: React.FC<EditQuestionProps> = ({ id, question, answer, setOp
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/questions/${id}`, {
+      const response = await fetch(`https://tuf-task-backend.vercel.app/api/questions/${id}`, {
         method: 'DELETE',
       });
       

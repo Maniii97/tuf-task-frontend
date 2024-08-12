@@ -25,7 +25,7 @@ const Card: React.FC = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch('http://localhost:3000/api/questions',{
+      const result = await fetch("https://tuf-task-backend.vercel.app/api/questions",{
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

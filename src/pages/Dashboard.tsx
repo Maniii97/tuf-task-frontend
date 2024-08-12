@@ -22,7 +22,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/questions", {
+        const response = await fetch("https://tuf-task-backend.vercel.app/api/questions", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
