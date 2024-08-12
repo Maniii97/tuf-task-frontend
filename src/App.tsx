@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 
 const App: React.FC = () => {
   return (
+    <>
     <Router>
       <Navbar />
       <Routes>
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
+    </>
   );
 };
 
