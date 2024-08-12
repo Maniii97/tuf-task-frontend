@@ -1,0 +1,77 @@
+.flip-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card-container {
+  width: 520px;
+  height: 520px;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-side {
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.front {
+  background-color: #90cdf4;
+  color: #2b6cb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.back {
+  background-color: #81e6d9;
+  color: #2b6cb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.button-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #4a5568;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d3748;
+}
