@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './EditQuestion.css';
 import EditQuestionProps from '../../types/EditQuestionProps';
-import { useNavigate } from 'react-router-dom';
 
 const EditQuestion: React.FC<EditQuestionProps> = ({ id, question, answer, setOpen, open }) => {
   const [newQuestion, setNewQuestion] = useState<string>(question);
@@ -13,8 +12,6 @@ const EditQuestion: React.FC<EditQuestionProps> = ({ id, question, answer, setOp
   }, [question, answer]);
 
   const handleOpen = () => setOpen(!open);
-
-  const navigate = useNavigate();
 
   const handleSubmit = async () => {
     const formdata = {
