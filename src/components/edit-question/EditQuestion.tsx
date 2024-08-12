@@ -34,7 +34,7 @@ const EditQuestion: React.FC<EditQuestionProps> = ({ id, question, answer, setOp
         throw new Error('Failed to update the question');
       }
       setOpen(false);
-      navigate(0);
+      navigate("/dashboard");
     } catch (error) {
       console.log(error);
     }
